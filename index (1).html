@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- >>> À MODIFIER : le titre qui s'affiche dans l'onglet du navigateur -->
+<title>Reiter David · CV en ligne</title>
+
+<style>
+  /* Ne touchez pas à cette partie (la mise en forme). Seule la couleur se choisit plus bas, dans <body>. */
+  body { margin:0; font-family:Arial, Helvetica, sans-serif; color:#1f2937; background:#f5f6f8; line-height:1.6; }
+  body.bleu   { --couleur:#2a5bd7; }
+  body.vert   { --couleur:#1f8a5b; }
+  body.rouge  { --couleur:#c8363c; }
+  body.violet { --couleur:#7b43c8; }
+  nav { background:#ffffff; border-bottom:1px solid #d9dde3; padding:14px 20px; display:flex; gap:20px; flex-wrap:wrap; justify-content:center; }
+  nav a { color:#1f2937; text-decoration:none; font-weight:bold; }
+  nav a:hover { color:var(--couleur); }
+  header { background:var(--couleur); color:#ffffff; text-align:center; padding:64px 20px; }
+  header h1 { margin:0 0 8px; font-size:2.4rem; }
+  header p { margin:0 auto; max-width:600px; font-size:1.15rem; }
+  .bouton { display:inline-block; margin-top:20px; background:#ffffff; color:var(--couleur); padding:12px 24px; border-radius:8px; text-decoration:none; font-weight:bold; }
+  section { max-width:820px; margin:0 auto; padding:40px 20px; }
+  h2 { color:var(--couleur); border-bottom:3px solid var(--couleur); padding-bottom:6px; display:inline-block; }
+  .carte { background:#ffffff; border:1px solid #d9dde3; border-radius:10px; padding:16px 20px; margin-bottom:14px; }
+  .carte h3 { margin:0 0 4px; }
+  .carte .date { color:#6b7280; font-size:.9rem; }
+  .carte p { margin:6px 0 0; }
+  .etiquettes { display:flex; flex-wrap:wrap; gap:10px; padding:0; list-style:none; }
+  .etiquettes li { background:var(--couleur); color:#ffffff; padding:6px 14px; border-radius:999px; }
+  .banniere { background:#ffffff; text-align:center; }
+  .banniere img { display:block; width:100%; max-height:320px; object-fit:cover; }
+  footer { text-align:center; color:#6b7280; padding:30px 20px; font-size:.9rem; }
+</style>
+</head>
+
+<!-- >>> À MODIFIER : choisissez votre couleur en remplaçant "bleu" par  vert, rouge ou violet -->
+<body class="rouge">
+
+<!-- ============ IMAGE / GIF EN HAUT DU SITE ============ -->
+<!-- >>> À MODIFIER : mettez votre image ou votre GIF dans le même dossier que ce fichier,
+     puis remplacez "banniere.gif" par son nom exact (ex. : "photo.jpg", "animation.gif").
+     Vous pouvez aussi mettre un lien internet complet (https://...).
+     "alt" = une courte description de l'image (utile si elle ne s'affiche pas). -->
+<!-- Pour supprimer cette section, effacez tout le bloc <div class="banniere"> ... </div> -->
+<div class="banniere">
+  <img src="data:image/jpeg;base64,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" alt="Bannière de mon CV">
+</div>
+
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#apropos">À propos</a>
+  <a href="#formation">Formation</a>
+  <a href="#competences">Compétences</a>
+  <a href="#projets">Projets</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- ============ ACCUEIL ============ -->
+<header id="accueil">
+  <!-- >>> À MODIFIER : votre prénom et votre nom -->
+  <h1>Reiter David</h1>
+  <!-- >>> À MODIFIER : une phrase pour vous présenter -->
+  <p>Étudiant en BTS CIEL, option informatique et réseaux, au lycée Louis Armand fuck yu.</p>
+  <a class="bouton" href="#contact">Me contacter</a>
+</header>
+
+
+<!-- ============ À PROPOS ============ -->
+<section id="apropos">
+  <h2>À propos</h2>
+  <!-- >>> À MODIFIER : 2 ou 3 phrases sur vous : ce que vous aimez, ce que vous cherchez (stage, alternance, poursuite d'études) -->
+  <p>Je suis passionné par l'informatique et les réseaux. Je cherche un stage pour mettre en pratique ce que j'apprends en cours.</p>
+</section>
+
+
+<!-- ============ FORMATION ============ -->
+<section id="formation">
+  <h2>Formation</h2>
+
+  <!-- >>> À MODIFIER : votre formation actuelle (laissez ce bloc) -->
+  <div class="carte">
+    <h3>BTS CIEL, option Informatique et Réseaux</h3>
+    <div class="date">2025 – 2027 · Lycée Louis Armand</div>
+    <p>Cybersécurité, informatique et réseaux, électronique.</p>
+  </div>
+
+  <!-- >>> À MODIFIER : votre bac (année, série ou spécialités). Pour ajouter une formation, copiez un bloc <div class="carte"> ... </div> en entier. -->
+  <div class="carte">
+    <h3>Baccalauréat</h3>
+    <div class="date">ANNÉE · NOM DE L'ÉTABLISSEMENT</div>
+    <p>Série ou spécialités.</p>
+  </div>
+</section>
+
+
+<!-- ============ EXPÉRIENCES (à supprimer si vous n'en avez pas) ============ -->
+<!-- DÉBUT : pour supprimer cette section, effacez tout de la ligne "DÉBUT" à la ligne "FIN" -->
+<section id="experiences">
+  <h2>Expériences</h2>
+  <div class="carte">
+    <h3>NOM DU POSTE OU DU STAGE</h3>
+    <div class="date">ENTREPRISE · MOIS ANNÉE</div>
+    <p>Ce que vous avez fait, en une phrase.</p>
+  </div>
+</section>
+<!-- FIN -->
+
+
+<!-- ============ COMPÉTENCES ============ -->
+<section id="competences">
+  <h2>Compétences</h2>
+  <!-- >>> À MODIFIER : une compétence par ligne <li>...</li>. Ajoutez ou supprimez des lignes. -->
+  <ul class="etiquettes">
+    <li>Réseaux</li>
+    <li>Windows et Linux</li>
+    <li>HTML et CSS</li>
+    <li>WordPress</li>
+    <li>Travail en équipe</li>
+  </ul>
+</section>
+
+
+<!-- ============ PROJETS ============ -->
+<section id="projets">
+  <h2>Projets</h2>
+  <!-- >>> À MODIFIER : un projet de cours ou personnel. Copiez le bloc pour en ajouter un autre. -->
+  <div class="carte">
+    <h3>Mon CV en ligne</h3>
+    <p>Création et publication de mon site sur GitHub Pages.</p>
+  </div>
+  <div class="carte">
+    <h3>NOM DE VOTRE PROJET</h3>
+    <p>Ce que vous avez réalisé, avec quels outils.</p>
+  </div>
+</section>
+
+
+<!-- ============ CENTRES D'INTÉRÊT (à supprimer si vous voulez) ============ -->
+<section id="interets">
+  <h2>Centres d'intérêt</h2>
+  <!-- >>> À MODIFIER : vos loisirs, séparés par des virgules -->
+  <p>Jeux vidéo, sport, musique.</p>
+</section>
+
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <h2>Contact</h2>
+  <!-- >>> À MODIFIER : une adresse e-mail dédiée. Ne mettez PAS votre adresse postale ni votre numéro de téléphone : ce site est public. -->
+  <p>E-mail : <a href="mailto:ADRESSE@EXEMPLE.FR">fuckyou@bitch.fr</a></p>
+  <!-- >>> FACULTATIF : votre profil LinkedIn. Supprimez la ligne si vous n'en avez pas. -->
+  <p>LinkedIn : <a href="https://www.linkedin.com/in/VOTRE-PROFIL">linkedin.com/in/YourMother</a></p>
+</section>
+
+
+<footer>
+  <!-- >>> À MODIFIER : votre nom -->
+  © 2026 Reiter david · BTS CIEL, lycée Louis Armand
+</footer>
+
+</body>
+</html>
